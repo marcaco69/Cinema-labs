@@ -1,57 +1,43 @@
 <!DOCTYPE html>
-
 <html>
 
     <head>
         <title> Cinema </title>
-        <meta name="description" content="Um site de cinema">
         <link rel="stylesheet" href="cinemacadfilme.css">
     </head>
 
     <body>
         <header>
-            <h1 id="Cinema">Cinema</h1>
+            <h1 id="Cinemacadfilme">Cinema Cadastro de Filmes</h1>
+            <br>
             <p> <a href="cinemaindex.html">Home</a></p>
         </header>
         <main>
             <section>
-                <h2>Cadastro de Filmes: </h2>
+                <h2>Cadastro de Filmes: (Título, Descrição, Gênero, Classificação, Duração, Data de Estreia)</h2>
+                <br>
                 <form>
-                    <input type="text" id="Titulo" name="Filme" placeholder="Título">
-                    <input type="text" id="Descricao" name="Filme" placeholder="Descrição">
+                    <input type="text" id="Titulo" placeholder="Título">
+                    <textarea id="Descricao" placeholder="Descrição" rows="1" style="vertical-align: middle; height: 35px;"></textarea>
+                    <select id="Genero">
+                        <option value="Acao">Ação</option>
+                        <option value="Comedia">Comédia</option>
+                        <option value="Ficcao">Ficção Científica</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Terror">Terror</option>
+                    </select>
+                    <select id="Classificacao">
+                        <option value="Livre">Livre</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                    </select>
+                    <input type="number" id="Duracao" placeholder="Duração em minutos">
+                    <input type="date" id="Estreia">
                     <br><br>
                 </form>
                 <button onclick="CadastroFilme()">Cadastrar</button>
-                <ul id="listadefilmes"></ul>
-            </section>
-            <section>
-                <h2>Ingressos: </h2>
-                <form>
-                    <input type="radio" value="Inteira" id="Inteira" name="Ingresso">
-                    <label for="Inteira">Inteira</label>
-                    <input type="radio" value="Meia" id="Meia" name="Ingresso">
-                    <label for="Meia">Meia</label>
-                </form>
-            </section>
-            <section>
-                <h2>Qual Filme assistir e em que dia: </h2>
-                <form">
-                <select name="Filme" id="Filme">
-                    <option value="StarWars">Star Wars</option>
-                    <option value="HarryPotter">Harry Potter</option>
-                    <option value="Minecraft">Minecraft</option>
-                </select>
-                <input type="date" id="Filme" name="Data">
-                </form>
-            </section>
-            <section>
-                <h2>Alimentos disponíveis para compra: </h2>
-                <form>
-                    <input type="checkbox" id="Pipoca" name="Comida" value="Pipoca">
-                    <label for="Pipoca">Pipoca</label>
-                    <input type="checkbox" name="Comida" id="Refrigerante" value="Refrigerante">
-                    <label for="Refrigerante">Refrigerante</label>
-                </form>
+                <ul id="listadefilmes"></ul> <!-- apagar linha -->
             </section>
         </main>
         <script src="cinemacadfilme.js"></script>

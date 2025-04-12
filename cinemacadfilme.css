@@ -18,13 +18,6 @@ header{
     border: 5px solid #171C2D;
 }
 
-h1 {
-    border: 5px solid #171C2D;
-    background-color: #E37239;
-    margin: 120px;
-    padding: 30px;
-}
-
 main{
     padding: 2rem;
     display: flex;
@@ -46,12 +39,7 @@ h2{
     color: #171C2D;
 }
 
-input[type="radio"], input[type="checkbox"] {
-    accent-color: #EA8561;
-    color: #EA8561;
-}
-
-input[type="text"] {
+input[type="text"], textarea, input[type="number"]{
     width: 15%;
     padding: 5px;
     border: 3px solid #171C2D;
@@ -59,7 +47,15 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-button, select, input[type="date"]{
+textarea {
+    height: 35px;
+    resize: none;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+button{
     padding: 5px;
     border-radius: 5px;
     color: #F9982F;
@@ -67,11 +63,12 @@ button, select, input[type="date"]{
     border: 3px solid #F9982F;
 }
 
-ul {
-    color: #254252;
-    width: 15%;
+select, input[type="date"]{
+    padding: 5px;
     border-radius: 5px;
-    background-color: lightblue;
+    color: #171C2D;
+    background-color: #F9982F;
+    border: 3px solid #171C2D;
 }
 
 p {
