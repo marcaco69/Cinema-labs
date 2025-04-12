@@ -1,0 +1,11 @@
+* {
+    background-color: lightblue;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section{
+    border: 3px solid black;
+    border-radius: 12%;
+}

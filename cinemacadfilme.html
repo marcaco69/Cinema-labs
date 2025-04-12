@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Cinema </title>
+        <meta name="description" content="Um site de cinema">
+        <link rel="stylesheet" href="cinemacadfilme.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="Cinema">Cinema</h1>
+            <p> <a href="cinemaindex.html">Home</a></p>
+        </header>
+        <main>
+            <section>
+                <h2>Cadastro de Filmes: </h2>
+                <form>
+                    <input type="text" id="Titulo" name="Filme" placeholder="Título">
+                    <input type="text" id="Descricao" name="Filme" placeholder="Descrição">
+                    <br><br>
+                </form>
+                <button onclick="CadastroFilme()">Cadastrar</button>
+                <ul id="listadefilmes"></ul>
+            </section>
+            <section>
+                <h2>Ingressos: </h2>
+                <form>
+                    <input type="radio" value="Inteira" id="Inteira" name="Ingresso">
+                    <label for="Inteira">Inteira</label>
+                    <input type="radio" value="Meia" id="Meia" name="Ingresso">
+                    <label for="Meia">Meia</label>
+                </form>
+            </section>
+            <section>
+                <h2>Qual Filme assistir e em que dia: </h2>
+                <form">
+                <select name="Filme" id="Filme">
+                    <option value="StarWars">Star Wars</option>
+                    <option value="HarryPotter">Harry Potter</option>
+                    <option value="Minecraft">Minecraft</option>
+                </select>
+                <input type="date" id="Filme" name="Data">
+                </form>
+            </section>
+            <section>
+                <h2>Alimentos disponíveis para compra: </h2>
+                <form>
+                    <input type="checkbox" id="Pipoca" name="Comida" value="Pipoca">
+                    <label for="Pipoca">Pipoca</label>
+                    <input type="checkbox" name="Comida" id="Refrigerante" value="Refrigerante">
+                    <label for="Refrigerante">Refrigerante</label>
+                </form>
+            </section>
+        </main>
+        <script src="cinemacadfilme.js"></script>
+    </body>
+</html>
