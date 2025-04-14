@@ -86,4 +86,15 @@ table {
     background-color: #F9982F;
     border: 3px solid #171C2D;
     border-collapse: collapse ;
+    width: 100%;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #171C2D;
+    color: #F9982F;
+    letter-spacing: 1px;
 }

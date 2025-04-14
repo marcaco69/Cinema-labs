@@ -44,10 +44,7 @@ function removerFilme() {
     }
 
     let filmes = JSON.parse(localStorage.getItem("filmes")) || [];
-
-    // Filtra os filmes que NÃO têm o título indicado
     let filmesAtualizados = filmes.filter(filme => filme.titulo.toLowerCase() !== tituloRemover.toLowerCase());
-
     if (filmes.length == filmesAtualizados.length) {
         alert("Filme não encontrado");
     } else {
@@ -76,6 +73,4 @@ function exibirFilmes() {
         listadefilmes.appendChild(linha);
     });
 }
-
-// Mostra os filmes ao carregar a página
 window.onload = exibirFilmes;

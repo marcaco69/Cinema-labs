@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Cinema </title>
+        <link rel="stylesheet" href="cinemavenda.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="Cinemacadfilme">Cinema Venda de Ingressos</h1>
+            <br>
+            <p> <a href="cinemaindex.html">Home</a></p>
+        </header>
+        <main>
+            <section>
+                <h2>Venda de Ingressos: (Nome, CPF, Assento(Ex: A10), Pagamento)</h2>
+                <br>
+                <form>
+                    <select  id="SelecionarSessao">
+                        <option value="">Selecione uma Sessão</option>
+                    </select>
+                    <input type="text" id="Nome" placeholder="Nome">
+                    <input type="text" id="CPF" placeholder="CPF">
+                    <input type="text" id="Assento" placeholder="Assento">
+                    <select id="Pagamento">
+                        <option value="Cartao">Cartão</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                    </select>
+                    <br><br>
+                </form>
+                <button onclick="Compra()">Comprar</button>
+            </section>
+            <br><br><br>
+        </main>
+        <script src="cinemavenda.js"></script>
+    </body>
+</html>
