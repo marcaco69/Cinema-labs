@@ -35,9 +35,31 @@
                     <input type="number" id="Duracao" placeholder="Duração em minutos">
                     <input type="date" id="Estreia">
                     <br><br>
+                    <button onclick="CadastroFilme()">Cadastrar</button>
                 </form>
-                <button onclick="CadastroFilme()">Cadastrar</button>
-                <ul id="listadefilmes"></ul> <!-- apagar linha -->
+            </section>
+            <br><br><br>
+            <section>
+                <h2>Lista de Filmes Registrados:</h2>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Descrição</th>
+                            <th>Gênero</th>
+                            <th>Classificação</th>
+                            <th>Duração</th>
+                            <th>Data de Estreia</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listadefilmes">
+                        
+                    </tbody>
+                </table>
+                <br>
+                <input type="text" id="RemoverTitulo" placeholder="Digite o Título do Filme para remover">
+                <button onclick="removerFilme()">Apagar</button>
             </section>
         </main>
         <script src="cinemacadfilme.js"></script>

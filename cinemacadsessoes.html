@@ -1,1 +1,38 @@
-<ul id="listadefilmes"></ul>
+<!DOCTYPE Html>
+<html>
+
+    <head>
+        <title> Cinema </title>
+        <link rel="stylesheet" href="cinemacadsessoes.css">
+    </head>
+
+    <body>
+        <header>
+            <h1> Cinema Cadastro de Sessões </h1>
+            <br>
+            <p> <a href="cinemaindex.html"> Home </a></p>
+        </header>
+
+        <main>
+            <section>
+                <br><br>
+                <h2>Cadastro de Sessões: (Filme, Sala, Data, Preço, Idioma)</h2>
+                <select  id="SelecionarFilme">
+                    <option value="">Selecione um Filme</option>
+                </select>
+                <select id="SelecionarSala">
+                    <option value="">Selecione uma Sala</option>
+                </select>
+                <input type="datetime-local" id="Data">
+                <input type="number" id="Preco" placeholder="Preço">
+                <select id="Idioma">
+                    <option value="Dublado">Dublado</option>
+                    <option value="Legendado">Legendado</option>
+                </select>
+                <br><br>
+                <button onclick="CadastroSessao()">Cadastrar</button>
+            </section>
+        </main>
+        <script src="cinemacadsessoes.js"></script>
+    </body>
+</html>

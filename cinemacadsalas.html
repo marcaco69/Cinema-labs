@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Cinema </title>
+        <link rel="stylesheet" href="cinemacadsalas.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="Cinemacadsala">Cinema Cadastro de Salas</h1>
+            <br>
+            <p> <a href="cinemaindex.html">Home</a></p>
+        </header>
+        <main>
+            <section>
+                <h2>Cadastro de Salas: (Nome, Capacitade, Tipo)</h2>
+                <br>
+                <form>
+                    <input type="text" id="Sala" placeholder="Nome da sala">
+                    <input type="number" id="Capacidade" placeholder="Capacidade">
+                    <select id="Tipo">
+                        <option value="2D">2D</option>
+                        <option value="3D">3D</option>
+                        <option value="IMAX">IMAX</option>
+                    </select>
+                    <br><br>
+                    <button onclick="CadastroSala()">Cadastrar</button>
+                </form>
+            </section>
+            <br><br><br>
+            <section>
+                <h2>Lista de Salas Registradas:</h2>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome da Sala</th>
+                            <th>Capacidade</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listadesalas">
+                        
+                    </tbody>
+                </table>
+                <br>
+                <input type="text" id="RemoverSala" placeholder="Digite o nome da sala para remover">
+                <button onclick="removerSala()">Apagar</button>
+            </section>
+        </main>
+        <script src="cinemacadsalas.js"></script>
+    </body>
+</html>
