@@ -104,3 +104,17 @@ th {
     color: #F9982F;
     letter-spacing: 1px;
 }
+.custom-btn {
+    background-color: #F9982F !important;
+    color: #171C2D !important;
+    border: 2px solid #171C2D !important;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #171C2D !important;
+    color: #F9982F !important;
+}

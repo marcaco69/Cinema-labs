@@ -5,7 +5,7 @@ window.onload = function() {
     sessoes.forEach((sessao, index) => {
         let option = document.createElement("option");
         option.value = index;
-        option.textContent = `${sessao.selecionarfilme} - ${sessao.selecionarsala} - ${sessao.data}`;
+        option.textContent = `${sessao.selecionarfilme} -- ${sessao.selecionarsala} -- ${sessao.data}`;
         selectsessao.appendChild(option);
     });
 
@@ -37,5 +37,4 @@ function Compra() {
     CadastroAssento.value = "";
     CadastroCPF.value = "";
     CadastroNome.value = "";
-    CadastroPagamento.value = "Cartão";
 }
